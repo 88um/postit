@@ -1,8 +1,9 @@
-import { ResetForm } from "@/components/auth/reset-form";
+import { ResetForm } from "@/components/ResetForm";
+
 
 const ResetPage = () => {
   return ( 
-    <ResetForm />
+    <ResetForm/>
   );
 }
  
