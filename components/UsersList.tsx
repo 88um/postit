@@ -54,15 +54,16 @@ const UsersList: React.FC<UsersListProps> = ({}) => {
     if (inView) {
       fetchNextPage();
     }
-  }, [inView]);
+  }, [inView, fetchNextPage]);
 
   const content = data?.pages.map((users: User[]) =>
     users.map((user: User) => (
       <div
+      key={user.username}
         className="hover:cursor-pointer flex justify-between pr-5 items-center m-2  rounded-xl bg-[#2c2c2c]"
         onClick={() => router.push(`users/${user.username}`)}
       >
-        <UserCard user={user} key={user.username} />
+        <UserCard user={user}  />
         <ChevronRight />
       </div>
     ))

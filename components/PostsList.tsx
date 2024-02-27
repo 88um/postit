@@ -59,12 +59,12 @@ const PostsList: React.FC<PostsListProps> = ({}) => {
     if (inView) {
       fetchNextPage();
     }
-  }, [inView]);
+  }, [inView, fetchNextPage]);
 
   const content = data?.pages.map((posts: Post[]) =>
     posts.map((post: Post) => (
-      <div className="">
-        <PostCard post={post} key={post.id} />
+      <div className=""  key={post.id}>
+        <PostCard post={post} />
       </div>
     ))
   );

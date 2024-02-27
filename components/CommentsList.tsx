@@ -45,12 +45,12 @@ const CommentsList: React.FC<CommentsListProps> = ({ post }) => {
     if (inView) {
       fetchNextPage();
     }
-  }, [inView]);
+  }, [inView, fetchNextPage]);
 
   const content = data?.pages.map((comments: Comment[]) =>
     comments.map((comment: Comment) => (
-      <div className="">
-        <CommentCard comment={comment} key={comment.id} />
+      <div key={comment.id}>
+        <CommentCard comment={comment}  />
       </div>
     ))
   );
