@@ -1,36 +1,39 @@
-## In Progress 🛠️
+# In Progress 🛠️
 Early build Reddit-esque discussion board
 Currently fetches/displays dummy data 
 
-# TODO 
-NextAuth - [x]
-InfiniteScroll - [x]
-Search/Filtering - [x]
-User Ranking - [x]
-Notifications - []
-User Profile Page - []
-Toasting - []
+## TODO 
+- NextAuth - [x]
+- InfiniteScroll - [x]
+- Search/Filtering - [x]
+- User Ranking - [x]
+- Notifications - []
+- User Profile Page - []
+- Toasting - []
 
+## Zustand modals
+- Login Modal - []
+- Report Modal - []
 
-Zustand modals:
- -  Login Modal - []
- -  Report Modal - []
+## Forms
+- Contact Form - []
+- Post Form - []
+- Feedback Form - []
+- Report Form - []
+- User Profile Form - []
 
-Forms:
- - Contact Form - []
- - Post Form - []
- - Feedback Form - []
- - Report Form - []
- - User Profile Form - []
+## Rate Limiting with Redis
+- []
 
-Rate Limiting with Redis - [] 
-Comment/Voting functionality - []
-Report functionality - []
-Notification functionality -[]
-Posting functionality:
- - Pinned posts - [x]
- - Editing/Deleting posts (Mods) - []
+## Functionality
+- Comment/Voting - []
+- Report - []
+- Notification -[]
+- Posting:
+  - Pinned posts - [x]
+  - Editing/Deleting posts (Mods) - []
 
-Chat feature - []
-UI patchup/beautification - []
-Refactoring - []
+## Additional Features
+- Chat - []
+- UI patchup/beautification - []
+- Refactoring - []
