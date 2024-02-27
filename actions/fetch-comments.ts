@@ -10,7 +10,7 @@ export async function fetchComments(
 ) {
   const post = dummyPostArray.find((post) => post.id === postId);
 
-  let comments = post.comments;
+  let comments = post?.comments;
   const startIndex = (page - 1) * 5;
   const endIndex = page * 5;
 
